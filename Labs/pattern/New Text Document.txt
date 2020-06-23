@@ -36,3 +36,5 @@ http://gyanendushekhar.com/2016/09/01/composite-design-pattern-c/
 
 https://www.dofactory.com/net/composite-design-pattern
 
+https://github.com/anupavanm/csharp-design-patterns-for-humans
+
