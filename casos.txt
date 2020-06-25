@@ -1,0 +1,25 @@
+https://www.youtube.com/watch?v=t4BTLdIMYEY
+
+Hilo 1
+--> Problema al instalar desde ClickOnce, instala en cualquier parte 
+
+En Visual Studio, WPF [Windows Presentation Foundation]
+
+
+capas aplicación, control, y Modelo con EF trabajando con MySql. Ademas una cuarta capa para los reportes locales, realizada en windows form.
+
+Intento hacer un instalador con OneClick, en realidad lo hice, tanto compilando en la carpeta Debug como Release, con destinacion a una carpeta en el escritorio para luego copiar a un pen drive.
+
+"Cuando lo pruebo instalar instala normalmente y cuando quiere arrancar la aplicacion(la cual en un primer momento recopila informacion de una serie de archvos XML de configuracion) me aparece el siguiente cartel:   .../Baseconfiguracion/config.xm"
+
+O sea, el instalador se ejecuta bien, es al arrancar el programa por primera vez el error.
+
+"con lo que me doy cuenta que me lo instala en alguna ubicacion rara que por supuesto en ningun lado setee, ademas de que no me copia los archivos necesarios para que la aplicacion funcione, como es el ejemplo de config.xml."
+
+Síntomas del problam (según él):
+- se lo instala en cualquier parte de la pc, o sea nunca configura esto
+- le hace falta archivos
+
+ClickOnce es una alternativa a los instaladores estándar de Windows. El nombre ClickOnce hace referencia al hecho de que, al ejecutarse el instalador, lo único que se le pide al usuario es que acepte la instalación del programa. Por este motivo es que cuando usted utilizó su instalador, no se le preguntó adónde quería instalar el programa.
+Una de las características más atractivas de ClickOnce frente a otras alternativas es su sistema de actualización automática. Este sistema funciona así: dentro de la aplicación se incluye una dirección URL, luego se hace deploy de un archivo manifiesto a esa misma URL, este manifiesto tiene información acerca de la aplicación misma y una lista de archivos de aplicación y prerrequisitos.
+Siempre que se inicialice la aplicación para ejecutarla, el motor de ClickOnce revisa este URL para ver si existen cambios en el archivo manifiesto. De haber cambios, la aplicación se actualiza automáticamente basada en las instrucciones en el archivo manifiesto.
